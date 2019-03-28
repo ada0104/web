@@ -1,0 +1,168 @@
+  <!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的首頁</title>
+		<a id="top"></a>
+		<div style="height: 1000px; background-color: yellow"></div>
+		<a href="https://www.google.com">Google</a>
+		
+		<h1>This is heading 1</h1>
+		<h2>This is heading 2</h2>
+		<h3>This is heading 3</h3>
+		<h4>This is heading 4</h4>
+		<h5>This is heading 5</h5>
+		<h6>This is heading 6</h6>
+		
+		abcd<!-- 這是換行 --><br><p>efgh<!-- 這是換段 --><br>ij</p>
+		<hr>
+		hello<!-- 這是分隔線 -->
+		<a href="https://www.google.com" target="_blank">Google</a>
+		<a href="https://tw.yahoo.com/" target="abc">yahoo</a>
+		<a href="https://github.com/ada0104/web" target="abc">github</a><!-- 指向同一個一直覆蓋-->
+		<a href="01.html">下一頁</a>
+		
+		<hr>
+    </head>
+    <body>
+	    <a href="#top">TOP</a>
+        <a href="https://www.google.com">小球</a>
+		<img src="3878.jpg" width="600" height="500" usemap="#mymap">&nbsp;<!-- 這是空白建 -->
+		<map name="mymap">
+		  <area shape="rect" coords="0,0,50,50" href="https://www.google.com.tw">
+		  <area shape="rect" coords="350,250,400,300" href="https://www.apple.com">
+		</map>
+<table border="1">
+  <tr>
+    <th colspan="2">月份</th>
+  </tr>
+  <tr>
+    <td>一月</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>二月</td>
+    <td>$80</td>
+  </tr>
+  <tr>
+    <td>三月</td>
+    <td rowspan="2">$50</td>
+  </tr>
+  <tr>
+    <td>小球</td>
+  </tr>
+</table >
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15427.58201861549!2d120.6551386618487!3d24.156835915311134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d8fbafb3c8d%3A0xa22ab05acf3e89af!2zTmluamEgRmFjdG9yeSDlv43ogIXlt6Xlu6A!5e0!3m2!1szh-TW!2stw!4v1553406036560" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NT_HkuiwMXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uyNl88FULG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<ol>
+  <li>項目一</li>
+  <li>項目二</li>
+  <li>項目三</li>
+</ol>
+
+<ul>
+  <li>游泳</li>
+  <li>看書</li>
+  <li>打球</li>
+</ul>
+<nav>
+    <ul>
+        <li>
+            <a href="#">首頁</a>
+        </li>
+        <li>
+            <a href="#">我的最愛</a>
+        </li>
+        <li>
+            <a href="#">購物車</a>
+        </li>
+        <li>
+            <a href="#">結帳</a>
+        </li>
+    </ul>
+</nav>
+
+<video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    你的瀏覽器不支援影片標籤
+</video>
+<html>
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+
+<script language="javascript">
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+
+    ctx.strokeStyle = "BurlyWood ";
+    ctx.fillStyle = "AntiqueWhite";
+    ctx.beginPath();
+    ctx.arc(100, 75 , 50, 0, 2 * Math.PI);
+    ctx.fill();
+    ctx.stroke();
+</script>
+<form action="https://www.google.com.tw/search">
+    關鍵字 <input name="q">&nbsp;
+    <input type="submit">
+</form>
+<script language="javascript">
+function onClink() {
+document.getElementById("mylabel").innerHTML = "hello world";
+}
+</script>
+
+<button onclick="onClink()">按我吧</button>
+<label id="mylabel"onmouseover="this.style.color='blue';"onmouseout="this.style.color='green'">hi<label>
+
+</html>
+<body>
+ <form>
+ <label id="uid">請輸入帳號:</label><input type="text"><p>
+ <input placeholder="請輸入密碼" type="password">
+ <input type="button" value="按我吧"><p>
+ <input type="hidden" value="1234"><p>
+ </form>
+ <p>
+ <button onclink="document.getElementById('uid').innerHTML= '請輸入帳號:';">中文</button>
+ <button onclink="document.getElementById('uid').innerHTML= 'Input your ID:';">英文</button>
+ </body>
+<form>
+    輸入姓名：<input name="name"><p>
+    請輸入自傳： <br>
+    <textarea name="memo" style="height: 100px; width: 230px">
+    </textarea>
+    <p><input type="submit" value="送出查詢">
+    <input type="reset" value="重設">
+</form>
+<form>
+    男生：<input name="sex" type="radio" value="m"><p>
+    女生：<input name="sex" type="radio" value="f" checked><p>
+    <p><input type="submit">
+    <input type="reset">
+</form>
+<form>
+    看電影：<input name="interest" type="checkbox" value="1"><p>
+    逛街：<input name="interest" type="checkbox" value="2" checked><p>
+    看書：<input name="interest" type="checkbox" value="3" checked><p>
+    <p><input type="submit">
+    <input type="reset">
+</form>
+<form>
+<select name="fruit">
+    <option value="1">芭樂
+    <option value="2">香蕉
+    <option value="3" selected>蘋果
+</select>
+<p><input type="submit">
+</form>
+
+<form>
+    <input type="datetime-local" name="dd">
+    <p><input type="submit">
+</form>
+
+
+</html>
